@@ -1,8 +1,10 @@
-task: compile execute
+collect: compilef compileg executef executeg
 
-compile: firstTask.c
-	        g++ firstTask.c -o firstTask.o
-
-execute: firstTask.o
-	        ./firstTask.o
-
+compilef: f.c
+	g++ f.c -o f.o
+compileg: g.c
+	g++ g.c -o g.o
+executef: f.o
+	./f.o
+executeg: g.o
+	./g.o	

@@ -5,13 +5,9 @@ float f(float x) {
 	    return exp(-fabs(x)) * sin(x);
 }
 
-float g(float x) {
-	    return exp(-fabs(x)) * cos(x);
-}
-
 int main() {
-    	float x;
+	float x;
 	scanf("%f", &x);
-	printf("f(x) = %f\ng(x) = %f", f(x), g(x));
+	printf("f(x) = %f\n", f(x));
 	return 0;
 }
